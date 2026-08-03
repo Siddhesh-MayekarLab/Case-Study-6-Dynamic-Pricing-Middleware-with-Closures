@@ -1,0 +1,19 @@
+body {
+    background: #f5f7fa;
+}
+
+.card {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#result {
+    font-size: 18px;
+}
+
+.result-card {
+    background: #e8fff1;
+    padding: 20px;
+    border-radius: 10px;
+}

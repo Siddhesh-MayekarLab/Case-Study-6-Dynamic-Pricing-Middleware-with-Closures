@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Canteen</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <div class="card shadow-lg p-4">
+
+            <h2 class="text-center mb-4">
+                🍔 Smart Canteen Pricing System
+            </h2>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Food Item
+                </label>
+
+                <select id="item" class="form-select">
+
+                    <option value="Burger" data-price="120">Burger - ₹120</option>
+
+                    <option value="Pizza" data-price="250">Pizza - ₹250</option>
+
+                    <option value="Sandwich" data-price="150">Sandwich - ₹150</option>
+
+                    <option value="Coffee" data-price="80">Coffee - ₹80</option>
+
+                    <option value="French Fries" data-price="110">French Fries - ₹110</option>
+
+                </select>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">
+                    Happy Hour Discount
+                </label>
+
+                <select id="discount" class="form-select">
+
+                    <option value="0">No Discount</option>
+
+                    <option value="10">Breakfast Offer (10%)</option>
+
+                    <option value="20">Lunch Offer (20%)</option>
+
+                    <option value="30">Evening Snacks (30%)</option>
+
+                    <option value="40">Weekend Special (40%)</option>
+
+                </select>
+
+            </div>
+
+            <button class="btn btn-success w-100" onclick="calculatePrice()">
+
+                Calculate Final Price
+
+            </button>
+
+            <hr>
+
+            <div id="result">
+
+                <h5 class="text-center">
+                    Select an item and click Calculate
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
